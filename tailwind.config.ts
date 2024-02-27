@@ -8,6 +8,29 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+				primary: "rgba(var(--main-color) / <alpha-value>)",
+				white: "rgba(var(--main-white) / <alpha-value>)",
+				secondary: "rgba(var(--border-color) / <alpha-value>)",
+				foreground: "rgba(var(--bg-color) / <alpha-value>)",
+				transparent: "transparent",
+			},
+      keyframe:{
+        "slide":{
+          "0%":{
+            transform: "translateX(100%)"
+          },
+          "50%": { 
+            transform: "translateX(-100%)" 
+          },
+          "100%":{
+            transform: "translateX(100%)"
+          }
+        }
+      },
+      animation:{
+        slide:'slide 10s linear infinite;' 
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

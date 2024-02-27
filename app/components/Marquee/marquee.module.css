@@ -1,0 +1,14 @@
+@keyframes slide {
+    0% { transform: translateX(100%); }
+    50% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+  .slidercontainer {
+    overflow: hidden;
+  }
+  .slidertext {
+    display: flex;
+    white-space: nowrap;
+    gap:7rem;
+    animation: slide 30s linear infinite;
+  }
